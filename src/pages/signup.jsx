@@ -10,7 +10,7 @@ const SignUp = () => {
         <div className="absolute h-2 w-2 bg-blue-400/20 rounded-full top-1/4 left-1/4" />
         <div className="absolute h-2 w-2 bg-blue-400/20 rounded-full top-3/4 right-1/4" />
         <div className="absolute h-2 w-2 bg-blue-400/20 rounded-full bottom-1/4 left-1/3" />
-        
+
         {/* Circles */}
         <div className="absolute h-32 w-32 bg-blue-900/20 rounded-full -top-10 -left-10" />
         <div className="absolute h-48 w-48 bg-blue-900/20 rounded-full bottom-20 right-20" />
@@ -22,9 +22,11 @@ const SignUp = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-white">
-            E<span className="text-blue-500">V</span>ENT FUNDLY
+            E<span className="text-blue-500">V</span>ENT
+            <span className="block">FUNDLY</span>
           </h1>
         </div>
+
 
         {/* Form */}
         <form className="space-y-6">
@@ -62,7 +64,7 @@ const SignUp = () => {
 
         {/* Forgot Password Link */}
         <div className="text-center mt-6">
-          <Link 
+          <Link
             href="/forgot-password"
             className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
           >

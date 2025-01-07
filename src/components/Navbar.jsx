@@ -6,9 +6,10 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white px-8 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
-          <Link to="/" className="text-xl font-bold">
-            EVENT FUNDLY
+        <div className="flex items-center space-x-2">
+          <Link to="/" className="flex flex-col text-xl font-bold leading-none">
+            <span className="italic text-blue-500 text-center">EVENT</span>
+            <span className="font-semibold text-white">FUNDLY</span>
           </Link>
         </div>
 
@@ -32,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <Link
             to="/SignIn"
-            className="text-white hover:opacity-80 transition-opacity"
+            className="text-gray-300 hover:opacity-80 transition-opacity"
           >
             Sign In
           </Link>

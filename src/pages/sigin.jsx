@@ -35,9 +35,11 @@ const SignIn = () => {
         {/* Logo */}
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-white">
-            E<span className="text-blue-500">V</span>ENT FUNDLY
+            E<span className="text-blue-500">V</span>ENT
+            <span className="block">FUNDLY</span>
           </h1>
         </div>
+
 
         {/* Form */}
         <form className="space-y-6" onSubmit={handleSignIn}>
@@ -74,6 +76,19 @@ const SignIn = () => {
         {/* Forgot Password Link */}
         <div className="text-center mt-6">
           <p className="text-sm text-gray-400">FORGOT YOUR PASSWORD?</p>
+        </div>
+
+        {/* Sign Up Link */}
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-400">
+            Don't have an account?{' '}
+            <span
+              className="text-blue-500 hover:underline cursor-pointer"
+              onClick={() => navigate('/signup')}
+            >
+              Sign Up
+            </span>
+          </p>
         </div>
       </div>
     </div>
